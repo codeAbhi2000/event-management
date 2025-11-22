@@ -11,5 +11,8 @@
     "moduleResolution": "node"  /* Specify module resolution strategy */
   },
   "include": ["./src/**/*"],      /* Include only the 'src' directory files for compilation */
-  "exclude": ["node_modules"] 
+  "exclude": ["node_modules"],
+  "ts-node": {
+  "require": ["dotenv/config"]
+}
 }

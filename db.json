@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "id": "8336a320-a1f1-433a-857e-536d3b86a92c",
+      "createdAt": "2025-11-21T18:26:49.761Z",
+      "updatedAt": "2025-11-21T18:26:49.761Z",
+      "name": "abhishek",
+      "password": "$2b$10$zyCXLSYdPztD/aOagazSHeMwcq9vy.KmEzt/zgKl1jA1ajdC/T6Ni",
+      "email": "abhishek@gmsil.com",
+      "events": [
+        ""
+      ]
+    },
+    {
+      "id": "342b4e55-d21a-4e2f-9128-afd76e671e61",
+      "createdAt": "2025-11-21T18:29:42.423Z",
+      "updatedAt": "2025-11-21T18:29:42.423Z",
+      "name": "abhishek",
+      "password": "$2b$10$5.Dbl5T7PqipgCMjh6XdC.UM5DjkV1XiHxPmeu7HuapHFEp1j9WP6",
+      "email": "abhishek@gmail.com",
+      "events": [
+        ""
+      ]
+    }
+  ]
+}
