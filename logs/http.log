@@ -1,1 +1,0 @@
-{"level":30,"time":1763752775051,"pid":25056,"hostname":"Abhi065","req":{"method":"POST","url":"/api/v1/auth/login"},"res":{"status":200},"responseTime":97,"msg":"request completed"}

@@ -9,13 +9,17 @@ export interface User {
 }
 
 export interface Event {
-    id : string
-    venue : string
+    id? : string
+    title : string
+    description : string
+    location : string
     price : string
-    numberOfTickets : Number
-    cretaedBy : [string]
+    numberOfTickets : number
+    createddBy : string
     dateOfConduct : Date 
-    participants : [string]
-    remainingTickets : Number
+    participants ?: [string]
+    remainingTickets : number,
+    createdAt? : Date
+    updatedAt? : Date
 }
 

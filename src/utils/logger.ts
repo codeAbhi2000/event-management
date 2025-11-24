@@ -1,19 +1,21 @@
 import pino from "pino";
 
+// Note: pino.destination doesn't support 'file', 'frequency', or 'size'
+// Use 'dest' for file path, and consider pino-roll for rotation
+
 const appLogStream = pino.destination({
-  file: "logs/app.log",
-  frequency: "daily",
-  size: "10M",      // rotate when size > 10MB
+  dest: "logs/app.log",
+  sync: false,
   mkdir: true
 });
 
 const errorLogStream = pino.destination({
-  file: "logs/error.log",
-  frequency: "daily",
-  size: "5M",
+  dest: "logs/error.log",
+  sync: false,
   mkdir: true
 });
 
+// Main logger
 const logger = pino(
   {
     level: "info",
@@ -25,10 +27,11 @@ const logger = pino(
           }
         : undefined
   },
-  appLogStream
+  // Only use destination when NOT using transport
+  process.env.NODE_ENV === "development" ? undefined : appLogStream
 );
 
-// dedicated error logger
+// Dedicated error logger
 export const errorLogger = pino(
   {
     level: "error"

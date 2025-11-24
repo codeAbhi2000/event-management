@@ -1,12 +1,11 @@
 import { Request,Response } from "express"
 import UserModel from "../model/user.model"
-import logger, { errorLogger } from "../utils/logger";
+import { errorLogger } from "../utils/logger";
 
 
 
 
 export const register = async(req:Request, res:Response)=>{
-    console.log(req.body);
     
     const {name,email,password} = req.body
 
