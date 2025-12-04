@@ -1,0 +1,289 @@
+{
+  "users": [
+    {
+      "id": "80fcca00-cb48-4ea4-bbad-c8e5371e69e6",
+      "createdAt": "2025-11-29T11:04:14.216Z",
+      "updatedAt": "2025-11-29T11:04:14.216Z",
+      "name": "abhishek",
+      "password": "$2b$10$hyjlFenjRjprBnmfFW7Lqu.l6N5CmhrIaIEM15ToHXepbw9uaI2Hi",
+      "email": "abhishek@gmail2.com",
+      "events": [
+        ""
+      ]
+    },
+    {
+      "id": "e6011d9e-6704-402d-96e8-360616515603",
+      "createdAt": "2025-11-29T11:10:02.114Z",
+      "updatedAt": "2025-11-29T11:10:02.114Z",
+      "name": "abhishek",
+      "password": "$2b$10$UHrDopcMF7qLnAg68dMLu.IR6HpN.uG8W3GSAgYotL2bV.VUuUh3G",
+      "email": "abhishek@gmail.com",
+      "events": [
+        ""
+      ]
+    },
+    {
+      "id": "79df8e30-9666-4abd-b7c2-7e21a935f6d3",
+      "createdAt": "2025-12-04T07:27:45.124Z",
+      "updatedAt": "2025-12-04T07:27:45.124Z",
+      "name": "Organizer",
+      "password": "$2b$10$GAtqjETVbfe9OhltHDSo7.D1hY2ZY0uPkMl6eO9c1MXzUXXns/ir2",
+      "email": "organizer_1764833264436@test.com",
+      "events": [
+        ""
+      ]
+    },
+    {
+      "id": "1c679177-16ea-4ca4-95a3-3e37775009eb",
+      "createdAt": "2025-12-04T07:28:52.642Z",
+      "updatedAt": "2025-12-04T07:28:52.642Z",
+      "name": "Organizer",
+      "password": "$2b$10$qLg9QChs170YEqC82HIVU.HwCg13HTSGwlJNOQivn7qz36XnCYsdq",
+      "email": "organizer_1764833332497@test.com",
+      "events": [
+        ""
+      ]
+    },
+    {
+      "id": "96902916-bdd2-4287-9a21-1461cea42596",
+      "createdAt": "2025-12-04T07:31:38.981Z",
+      "updatedAt": "2025-12-04T07:31:38.981Z",
+      "name": "Organizer",
+      "password": "$2b$10$.3nnFs9A9btrXMypg8qYTOlROmEBB47yRGkwi0N28QleNz9buqX0G",
+      "email": "organizer_1764833498828@test.com",
+      "events": [
+        ""
+      ]
+    },
+    {
+      "id": "2b0e4511-9b26-439e-b3a9-b6e99facd204",
+      "createdAt": "2025-12-04T07:32:36.092Z",
+      "updatedAt": "2025-12-04T07:32:36.092Z",
+      "name": "Organizer",
+      "password": "$2b$10$2CM1cOzH6EtKzwDlVdfc1u9ZAo1a2KWN1H1.2FrnzQIq8OHCRlqXa",
+      "email": "organizer_1764833555942@test.com",
+      "events": [
+        ""
+      ]
+    },
+    {
+      "id": "0d601fb2-9a38-4177-a167-963870a99261",
+      "createdAt": "2025-12-04T07:32:36.421Z",
+      "updatedAt": "2025-12-04T07:32:36.421Z",
+      "name": "Attendee",
+      "password": "$2b$10$O0KmmxnGbo24YlYoqupjduBgvDmXei8oKIKL4pol7wgqv80zrJnYq",
+      "email": "attendee_1764833556346@test.com",
+      "events": [
+        ""
+      ]
+    },
+    {
+      "id": "b99010e4-4d30-4ed4-b5cd-8384568b8583",
+      "createdAt": "2025-12-04T07:44:00.082Z",
+      "updatedAt": "2025-12-04T07:44:00.082Z",
+      "name": "Organizer",
+      "password": "$2b$10$nVGCdFtwAVuXi0aX5lX4geyqTKo55uk4KOy4nb2NJJNKhJO4hqmkW",
+      "email": "organizer_1764834239905@test.com",
+      "events": [
+        ""
+      ]
+    },
+    {
+      "id": "017f7c9e-e4ba-4d97-b816-90ff7b868bc9",
+      "createdAt": "2025-12-04T07:44:00.390Z",
+      "updatedAt": "2025-12-04T07:44:00.390Z",
+      "name": "Attendee",
+      "password": "$2b$10$TQwnabwyN4.upLfSaSWxrul2kZ.O837KjLLvy92aqsjuVfuQrhFrO",
+      "email": "attendee_1764834240299@test.com",
+      "events": [
+        ""
+      ]
+    },
+    {
+      "id": "7b12a232-3ad3-47d9-a533-94612f860ece",
+      "createdAt": "2025-12-04T07:56:02.443Z",
+      "updatedAt": "2025-12-04T07:56:02.443Z",
+      "name": "Organizer",
+      "password": "$2b$10$AgFvKDyQIK2wgz.PyMFbPeK9947g.LXo7VbwuP/zw6jInvJ9j2K7C",
+      "email": "organizer_1764834962161@test.com",
+      "events": [
+        ""
+      ]
+    },
+    {
+      "id": "95e2a128-00c4-4d09-884d-9860d6f356ce",
+      "createdAt": "2025-12-04T07:56:02.790Z",
+      "updatedAt": "2025-12-04T07:56:02.790Z",
+      "name": "Attendee",
+      "password": "$2b$10$Q6z3EYXwokeNovZ5JdoYru56rrg/pn.fQ.O6gHZiyHQ2fPoiDcgfO",
+      "email": "attendee_1764834962693@test.com",
+      "events": [
+        ""
+      ]
+    },
+    {
+      "id": "42f94c3e-5c9b-44dc-9ee8-15b7010b092d",
+      "createdAt": "2025-12-04T07:57:10.394Z",
+      "updatedAt": "2025-12-04T07:57:10.394Z",
+      "name": "Organizer",
+      "password": "$2b$10$/HHBgIZ1G/bvFl6Pzw7/luvdwjArvArowtGrmhozJCIZVfVJ2PqL6",
+      "email": "organizer_1764835030257@test.com",
+      "events": [
+        ""
+      ]
+    },
+    {
+      "id": "773c0a90-8bb8-4d08-8472-a97dcd39d539",
+      "createdAt": "2025-12-04T07:57:10.731Z",
+      "updatedAt": "2025-12-04T07:57:10.731Z",
+      "name": "Attendee",
+      "password": "$2b$10$PYUyVhNu5AcbqKcUyG209uRmIgDqfMtAp7m9XWdq0oiI5G2zLWNKu",
+      "email": "attendee_1764835030626@test.com",
+      "events": [
+        ""
+      ]
+    },
+    {
+      "id": "98eb15b1-4d66-4068-b030-de1d3c151f58",
+      "createdAt": "2025-12-04T07:58:38.753Z",
+      "updatedAt": "2025-12-04T07:58:38.753Z",
+      "name": "Organizer",
+      "password": "$2b$10$5sBmVVmttroetyzZ1s1e8e9N1cDoL9SiP8StDJcL/MfSDJPzXWcgm",
+      "email": "organizer_1764835118615@test.com",
+      "events": [
+        ""
+      ]
+    },
+    {
+      "id": "5812cf4e-9d69-4a50-a55e-9cdb5c5ee1c5",
+      "createdAt": "2025-12-04T07:58:39.141Z",
+      "updatedAt": "2025-12-04T07:58:39.141Z",
+      "name": "Attendee",
+      "password": "$2b$10$PTZrnIXPvrXO1jU8S7ASD.yqJBvqtx35RkPKiBmfOwnmcJXwvLIl2",
+      "email": "attendee_1764835118982@test.com",
+      "events": [
+        ""
+      ]
+    },
+    {
+      "id": "90b8b6fe-d9da-4728-92fe-daeb911b8152",
+      "createdAt": "2025-12-04T07:59:58.602Z",
+      "updatedAt": "2025-12-04T07:59:58.602Z",
+      "name": "Organizer",
+      "password": "$2b$10$Wg8sdYkXw.MuIuxa2wnGvezxx6p5GUZtitz.MZdI6aj773LiOuRXG",
+      "email": "organizer_1764835198320@test.com",
+      "events": [
+        ""
+      ],
+      "createdEvents": [
+        "b5f55cad-f73e-4bcf-bf6b-1312490aa39e"
+      ],
+      "participatedEvents": []
+    },
+    {
+      "id": "b84ca1a5-a81a-4c82-a3d2-58eb95d37934",
+      "createdAt": "2025-12-04T07:59:58.981Z",
+      "updatedAt": "2025-12-04T07:59:58.981Z",
+      "name": "Attendee",
+      "password": "$2b$10$.DblL.kqudpbXJNUdmdTOeC2FgxXwF2r79RdSCMOeMvOKGVIUvpxW",
+      "email": "attendee_1764835198871@test.com",
+      "events": [
+        ""
+      ],
+      "createdEvents": [],
+      "participatedEvents": [
+        "b5f55cad-f73e-4bcf-bf6b-1312490aa39e"
+      ]
+    },
+    {
+      "id": "a2498714-78d7-43b5-9491-d780a25e2f3e",
+      "createdAt": "2025-12-04T08:05:59.514Z",
+      "updatedAt": "2025-12-04T08:05:59.514Z",
+      "name": "Organizer",
+      "password": "$2b$10$oKf1A39y9VT4F/OehFodx.StXOCqESfSaZmNfG7TQ4UqkCUYOCDAO",
+      "email": "organizer_1764835559331@test.com",
+      "events": [
+        ""
+      ],
+      "createdEvents": [
+        "a93e0bc1-efe8-4a46-8c3b-5c70593d7d00"
+      ],
+      "participatedEvents": []
+    },
+    {
+      "id": "249e40c8-1a02-4256-8daf-5dc252349e67",
+      "createdAt": "2025-12-04T08:05:59.859Z",
+      "updatedAt": "2025-12-04T08:05:59.859Z",
+      "name": "Attendee",
+      "password": "$2b$10$95NrMVdwUDGalq7YT5xS4OP3icQ1intXmRMzQ0IbPc.xq8DQc6.Rm",
+      "email": "attendee_1764835559762@test.com",
+      "events": [
+        ""
+      ],
+      "createdEvents": [],
+      "participatedEvents": [
+        "a93e0bc1-efe8-4a46-8c3b-5c70593d7d00"
+      ]
+    },
+    {
+      "id": "8e5448a9-a029-4954-bc1c-bbc1596115e3",
+      "createdAt": "2025-12-04T09:04:50.804Z",
+      "updatedAt": "2025-12-04T09:04:50.804Z",
+      "name": "Organizer",
+      "password": "$2b$10$ptRTl6fARM.RCdlPSRGq1.9E624TJd1yxByUUsoiwdqVobrZx3UHm",
+      "email": "organizer_1764839090511@test.com",
+      "events": [
+        ""
+      ],
+      "createdEvents": [
+        "ed85432f-97bf-4fc5-8b9c-892b117f698b"
+      ],
+      "participatedEvents": []
+    },
+    {
+      "id": "887ea4c4-e277-4e34-b74b-acd0e2659d21",
+      "createdAt": "2025-12-04T09:04:51.271Z",
+      "updatedAt": "2025-12-04T09:04:51.271Z",
+      "name": "Attendee",
+      "password": "$2b$10$WiWP8f.uXtMSB52m6Jy1sOcQcCcibVrxcfh8Uj9V1QnBzy3HfTTRC",
+      "email": "attendee_1764839091100@test.com",
+      "events": [
+        ""
+      ],
+      "createdEvents": [],
+      "participatedEvents": [
+        "ed85432f-97bf-4fc5-8b9c-892b117f698b"
+      ]
+    },
+    {
+      "id": "c5bf9391-18fe-44a7-b2a2-f83a6941f3ac",
+      "createdAt": "2025-12-04T09:07:43.549Z",
+      "updatedAt": "2025-12-04T09:07:43.549Z",
+      "name": "Organizer",
+      "password": "$2b$10$OwDvrjC3zV96vVdxqVS6nuYQrRq6c1jKLPtYwGPM3LHolIcdfPYSK",
+      "email": "organizer_1764839263275@test.com",
+      "events": [
+        ""
+      ],
+      "createdEvents": [
+        "59867688-9c08-4ae3-9f00-2bbbf16cceae"
+      ],
+      "participatedEvents": []
+    },
+    {
+      "id": "3df4495c-cbcb-4f01-a4a8-87e520ad5b99",
+      "createdAt": "2025-12-04T09:07:44.074Z",
+      "updatedAt": "2025-12-04T09:07:44.074Z",
+      "name": "Attendee",
+      "password": "$2b$10$FrPJZjP/oP3kLss/H1ui6O0PAZZNJ0an41v84rmaqJUtfhq2OZrIe",
+      "email": "attendee_1764839263894@test.com",
+      "events": [
+        ""
+      ],
+      "createdEvents": [],
+      "participatedEvents": [
+        "59867688-9c08-4ae3-9f00-2bbbf16cceae"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "Events": [
+    {
+      "id": "1b091dff-ca58-410e-bf82-40c49abd35ec",
+      "location": "Madikeri",
+      "price": "250",
+      "numberOfTickets": 100,
+      "createddBy": "80fcca00-cb48-4ea4-bbad-c8e5371e69e6",
+      "title": "new event",
+      "description": "the happpy birthadaya for my goni",
+      "dateOfConduct": "2025-12-06T00:00:00.000Z",
+      "participants": [
+        "",
+        "e6011d9e-6704-402d-96e8-360616515603"
+      ],
+      "remainingTickets": 99,
+      "createdAt": "2025-11-29T11:05:12.407Z",
+      "updatedAt": "2025-11-29T11:11:45.168Z"
+    },
+    {
+      "id": "50ab0446-21ba-4959-bd6f-6608d39ee033",
+      "location": "Virtual",
+      "price": 0,
+      "numberOfTickets": 100,
+      "createddBy": "7b12a232-3ad3-47d9-a533-94612f860ece",
+      "title": "Tech Conference 2024",
+      "description": "A conference about tech.",
+      "dateOfConduct": "2025-12-04T07:56:02.668Z",
+      "participants": [
+        "",
+        "95e2a128-00c4-4d09-884d-9860d6f356ce"
+      ],
+      "remainingTickets": 99,
+      "createdAt": "2025-12-04T07:56:02.682Z",
+      "updatedAt": "2025-12-04T07:56:03.051Z"
+    },
+    {
+      "id": "de708024-54a8-42bd-819d-aef905f7b3cd",
+      "location": "Virtual",
+      "price": 0,
+      "numberOfTickets": 100,
+      "createddBy": "42f94c3e-5c9b-44dc-9ee8-15b7010b092d",
+      "title": "Tech Conference 2024",
+      "description": "A conference about tech.",
+      "dateOfConduct": "2025-12-04T07:57:10.608Z",
+      "participants": [
+        "",
+        "773c0a90-8bb8-4d08-8472-a97dcd39d539"
+      ],
+      "remainingTickets": 99,
+      "createdAt": "2025-12-04T07:57:10.619Z",
+      "updatedAt": "2025-12-04T07:57:10.951Z"
+    },
+    {
+      "id": "ab80439c-8fa8-4fc4-b6f7-36ef3ac2cab5",
+      "location": "Virtual",
+      "price": 0,
+      "numberOfTickets": 100,
+      "createddBy": "98eb15b1-4d66-4068-b030-de1d3c151f58",
+      "title": "Tech Conference 2024",
+      "description": "A conference about tech.",
+      "dateOfConduct": "2025-12-04T07:58:38.969Z",
+      "participants": [
+        "",
+        "5812cf4e-9d69-4a50-a55e-9cdb5c5ee1c5"
+      ],
+      "remainingTickets": 99,
+      "createdAt": "2025-12-04T07:58:38.979Z",
+      "updatedAt": "2025-12-04T07:58:39.358Z"
+    }
+  ]
+}

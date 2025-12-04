@@ -4,6 +4,8 @@ export interface User {
     email : string
     password : string
     events? : [string]
+    createdEvents?: string[]
+    participatedEvents?: string[]
     createdAt : Date
     updatedAt : Date
 }

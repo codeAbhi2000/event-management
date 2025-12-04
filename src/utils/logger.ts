@@ -1,42 +1,24 @@
 import pino from "pino";
+import fs from "fs";
+import path from "path";
 
-// Note: pino.destination doesn't support 'file', 'frequency', or 'size'
-// Use 'dest' for file path, and consider pino-roll for rotation
+const logsDir = path.join(process.cwd(), "logs");
+if (!fs.existsSync(logsDir)) {
+  fs.mkdirSync(logsDir, { recursive: true });
+}
 
-const appLogStream = pino.destination({
-  dest: "logs/app.log",
-  sync: false,
-  mkdir: true
-});
-
-const errorLogStream = pino.destination({
-  dest: "logs/error.log",
-  sync: false,
-  mkdir: true
-});
-
-// Main logger
-const logger = pino(
-  {
-    level: "info",
-    transport:
-      process.env.NODE_ENV === "development"
-        ? {
-            target: "pino-pretty",
-            options: { colorize: true }
-          }
-        : undefined
-  },
-  // Only use destination when NOT using transport
-  process.env.NODE_ENV === "development" ? undefined : appLogStream
+// Use standard fs streams instead of pino.destination
+const appLogStream = fs.createWriteStream(
+  path.join(logsDir, "app.log"),
+  { flags: "a" }
 );
 
-// Dedicated error logger
-export const errorLogger = pino(
-  {
-    level: "error"
-  },
-  errorLogStream
+const errorLogStream = fs.createWriteStream(
+  path.join(logsDir, "error.log"),
+  { flags: "a" }
 );
+
+const logger = pino(appLogStream);
+export const errorLogger = pino({ level: "error" }, errorLogStream);
 
 export default logger;

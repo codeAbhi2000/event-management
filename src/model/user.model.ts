@@ -1,22 +1,19 @@
 import { promises as fs } from "fs";
 import { join } from "path";
-import {User} from "../types/data.model"
-import bcrypt from "bcrypt"
-import jwt from "jsonwebtoken"
+import { User } from "../types/data.model";
+import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
 import dotenv from 'dotenv';
 
-dotenv.config()
-
-// /D:/AirTribe/event-management/src/model/user.model.ts
+dotenv.config();
 
 type ID = string;
-
 
 interface DBSchema {
     users: User[];
 }
 
-const DB_PATH = join(__dirname, "../../db.json");
+const DB_PATH = join(__dirname, "../../user.json");
 
 async function ensureDB(): Promise<DBSchema> {
     try {
@@ -48,7 +45,7 @@ function generateId(): ID {
             // @ts-ignore
             return crypto.randomUUID();
         }
-    } catch {}
+    } catch { }
     return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 9)}`;
 }
 
@@ -66,36 +63,41 @@ export default class UserModel {
         return u ? { ...u } : null;
     }
 
-
-    static async _hashThePassword(password : string) : Promise<string>{
-        const hashedPass = await bcrypt.hash(password,10)
-        return hashedPass
+    static async findByEmail(email: string): Promise<User | null> {
+        const db = await ensureDB();
+        const user = db.users.find((u) => u.email === email) || null;
+        return user ? { ...user } : null;
     }
 
-    static async _comaparePassword({dbPassword,userPassed }: {dbPassword : string, userPassed : string}): Promise<boolean> {
-        const valid:boolean = await bcrypt.compare(userPassed,dbPassword)
-        return valid
+    static async _hashThePassword(password: string): Promise<string> {
+        const hashedPass = await bcrypt.hash(password, 10);
+        return hashedPass;
     }
 
+    static async _comaparePassword({ dbPassword, userPassed }: { dbPassword: string, userPassed: string }): Promise<boolean> {
+        const valid: boolean = await bcrypt.compare(userPassed, dbPassword);
+        return valid;
+    }
 
-    static async generateToken(data : any):Promise<string>{
-        
-        const token = jwt.sign(data,process.env.JWT_SECRETE!,{expiresIn : "1d"})
-        return token
+    static async generateToken(data: any): Promise<string> {
+        const token = jwt.sign(data, process.env.JWT_SECRETE!, { expiresIn: "1d" });
+        return token;
     }
 
     // create a new user (save)
     static async create(payload: Partial<User>): Promise<User> {
         const db = await ensureDB();
-        const now = new Date()
+        const now = new Date();
         const user: User = {
-            id:  generateId(),
+            id: generateId(),
             createdAt: now,
             updatedAt: now,
-            name : payload.name?? "",
-            password : payload.password ?? "",
-            email : payload.email ?? "",
-            events : [""]
+            name: payload.name ?? "",
+            password: payload.password ?? "",
+            email: payload.email ?? "",
+            events: [""],
+            createdEvents: [],
+            participatedEvents: []
         };
         db.users.push(user);
         await writeDB(db);
@@ -135,9 +137,29 @@ export default class UserModel {
         await writeDB(db);
     }
 
-    static async findByEmail(email : string) : Promise<User | null> {
-        const db = await ensureDB()
-        const user = db.users.find((u)=>u.email === email) || null
-        return user ? {...user} : null
+    static async addCreatedEvent(userId: string, eventId: string): Promise<void> {
+        const db = await ensureDB();
+        const userIndex = db.users.findIndex((u) => u.id === userId);
+        if (userIndex !== -1) {
+            const user = db.users[userIndex];
+            if (!user.createdEvents) user.createdEvents = [];
+            user.createdEvents.push(eventId);
+            db.users[userIndex] = user;
+            await writeDB(db);
+        }
+    }
+
+    static async addParticipatedEvent(userId: string, eventId: string): Promise<void> {
+        const db = await ensureDB();
+        const userIndex = db.users.findIndex((u) => u.id === userId);
+        if (userIndex !== -1) {
+            const user = db.users[userIndex];
+            if (!user.participatedEvents) user.participatedEvents = [];
+            if (!user.participatedEvents.includes(eventId)) {
+                user.participatedEvents.push(eventId);
+                db.users[userIndex] = user;
+                await writeDB(db);
+            }
+        }
     }
 }

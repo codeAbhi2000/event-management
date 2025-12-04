@@ -22,7 +22,12 @@ export const authenticate = async (req: Request, res: Response, next: NextFuncti
         }
         const decoded = jwt.verify(token, secret) as { userId: string };
 
+        console.log(decoded);
+        
+
         const user = await UserModel.findById(decoded.userId);
+        console.log(user);
+        
         if (!user) {
             return res.status(401).json({ message: "Invalid token: user not found" });
 

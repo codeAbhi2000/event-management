@@ -1,23 +1,23 @@
 {
   "users": [
     {
-      "id": "8336a320-a1f1-433a-857e-536d3b86a92c",
-      "createdAt": "2025-11-21T18:26:49.761Z",
-      "updatedAt": "2025-11-21T18:26:49.761Z",
+      "id": "540b3885-63cb-44f2-a4f1-22d41b357b64",
+      "createdAt": "2025-11-29T11:01:04.749Z",
+      "updatedAt": "2025-11-29T11:01:04.749Z",
       "name": "abhishek",
-      "password": "$2b$10$zyCXLSYdPztD/aOagazSHeMwcq9vy.KmEzt/zgKl1jA1ajdC/T6Ni",
-      "email": "abhishek@gmsil.com",
+      "password": "$2b$10$0T8zHF9a3I7IepMLygZ/..jyKBXteULAQJCWRZTx/dX78RvKyUnpS",
+      "email": "abhishek@gmail.com",
       "events": [
         ""
       ]
     },
     {
-      "id": "342b4e55-d21a-4e2f-9128-afd76e671e61",
-      "createdAt": "2025-11-21T18:29:42.423Z",
-      "updatedAt": "2025-11-21T18:29:42.423Z",
+      "id": "b9418da1-a96f-4c27-9b21-bef65111755a",
+      "createdAt": "2025-11-29T11:01:11.101Z",
+      "updatedAt": "2025-11-29T11:01:11.101Z",
       "name": "abhishek",
-      "password": "$2b$10$5.Dbl5T7PqipgCMjh6XdC.UM5DjkV1XiHxPmeu7HuapHFEp1j9WP6",
-      "email": "abhishek@gmail.com",
+      "password": "$2b$10$27MBFHDigIFocjTXYaPEYOvCB4u14JFO/oEFNAuMO7v8mYe5iSwD2",
+      "email": "abhishek@gmail2.com",
       "events": [
         ""
       ]

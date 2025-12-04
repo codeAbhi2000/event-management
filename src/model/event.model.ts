@@ -16,7 +16,21 @@ interface DBSchema {
     Events: Event[];
 }
 
-const DB_PATH = join(__dirname, "../../db.json");
+const DB_PATH = join(__dirname, "../../events.json");
+
+/**
+ * ensureDB supports both:
+ *  - a single JSON object { Events: Event[], Users?: any[] } (preferred)
+ *  - an array JSON file [ Event, ... ] (legacy => treated as Events)
+ *  - newline-delimited JSON (NDJSON) where each line is an Event or User (append-friendly)
+ *
+ * If the file is missing it will be created (without overwriting any existing file).
+ * If the file is malformed we back it up to DB_PATH + ".bak-<timestamp>" and create a fresh file.
+ *
+ * Note: the top-level DBSchema declared earlier contains Events: Event[]. To add optional
+ * Users support without changing that earlier declaration we merge the interface here.
+ */
+
 
 async function ensureDB(): Promise<DBSchema> {
     try {
@@ -38,6 +52,7 @@ async function writeDB(db: DBSchema): Promise<void> {
     await fs.writeFile(tmp, JSON.stringify(db, null, 2), "utf8");
     await fs.rename(tmp, DB_PATH);
 }
+
 
 async function generateId(): Promise<ID> {
     // Use crypto.randomUUID if available, fallback to timestamp + random

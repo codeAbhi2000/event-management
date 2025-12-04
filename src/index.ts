@@ -1,7 +1,7 @@
 const express = require("express")
 import routes from "./routes"
 import { httpLogger } from "./middleware/logger.middleware"
-import logger from "./utils/logger"
+import logger, { errorLogger } from "./utils/logger"
 import { Request,Response } from "express"
 import { rateLimiter } from "./utils/ratelimiter"
 
